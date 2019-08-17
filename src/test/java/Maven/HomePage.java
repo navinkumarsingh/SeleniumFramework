@@ -18,7 +18,7 @@ public static Logger log = LogManager.getLogger(Base.class.getName());
 	@BeforeTest
 	public void launchBrowser() throws IOException {
 		driver = initializeDriver();
-	log.info("Driver is initialized");
+	log.info("Driver is initialized successfully");
 	}
 	@Test(dataProvider="getData")
 	public void pageNavigation(String username, String pwd) throws IOException{
@@ -31,7 +31,7 @@ public static Logger log = LogManager.getLogger(Base.class.getName());
 		l.getEmail().sendKeys(username);
 		l.getPwd().sendKeys(pwd);
 		l.getLogin().click();
-		log.info("Successfully passed username and password and clicked on Login button");
+		log.info("Successfully passed username and password and clicked on Login button, Landed to Home page");
 	}
 	
 
