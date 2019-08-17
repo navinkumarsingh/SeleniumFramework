@@ -1,0 +1,6 @@
+02:07:47.234 [main] INFO  resources.Base - Driver is initialized
+02:07:49.253 [main] INFO  resources.Base - qaclick academy launched
+02:07:49.311 [main] INFO  resources.Base - Successfully validated navigation bar
+02:07:54.313 [main] INFO  resources.Base - Driver is initialized
+02:08:03.902 [main] INFO  resources.Base - Successfully passed username and password and clicked on Login button
+02:08:08.861 [main] INFO  resources.Base - Successfully passed username and password and clicked on Login button

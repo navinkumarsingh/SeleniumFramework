@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Maven.Listeners"/>
+  </listeners>
+  <test name="LoginTest(failed)">
+    <classes>
+      <class name="Maven.HomePage">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="pageNavigation" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Maven.HomePage -->
+      <class name="Maven.ValidateNavigationBar">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- Maven.ValidateNavigationBar -->
+      <class name="Maven.ValidateTitle">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Maven.ValidateTitle -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+  <test name="TitleTest(failed)">
+    <classes>
+      <class name="Maven.HomePage">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Maven.HomePage -->
+      <class name="Maven.ValidateNavigationBar">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- Maven.ValidateNavigationBar -->
+      <class name="Maven.ValidateTitle">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="tearDown"/>
+          <include name="pageNavigation"/>
+        </methods>
+      </class> <!-- Maven.ValidateTitle -->
+    </classes>
+  </test> <!-- TitleTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
