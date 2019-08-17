@@ -30,6 +30,7 @@ public class ValidateNavigationBar extends Base{
 	@AfterTest
 	public void tearDown() {
 		driver.close();
+		log.info("Successfully closed the browser");
 		//below code will save the memory
 				driver= null;
 	}

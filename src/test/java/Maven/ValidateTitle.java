@@ -34,6 +34,7 @@ public class ValidateTitle extends Base{
 	@AfterTest
 	public void tearDown() {
 		driver.quit();
+		log.info("Successfully closed the browser");
 		//below code will save the memory
 				driver= null;
 	}
