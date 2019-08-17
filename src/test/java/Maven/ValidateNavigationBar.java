@@ -27,6 +27,22 @@ public class ValidateNavigationBar extends Base{
 		log.info("Successfully validated navigation bar");
 
 }
+	@Test()
+	public void pageNavigation1(){
+		
+		LandingPage l = new LandingPage(driver);
+		Assert.assertTrue(l.getNavigationBar().isDisplayed());
+		log.info("Successfully validated navigation bar");
+
+}
+	@Test()
+	public void pageNavigation2(){
+		
+		LandingPage l = new LandingPage(driver);
+		Assert.assertTrue(l.getNavigationBar().isDisplayed());
+		log.info("Successfully validated navigation bar");
+
+}
 	@AfterTest
 	public void tearDown() {
 		driver.close();

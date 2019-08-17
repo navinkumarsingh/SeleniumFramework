@@ -30,6 +30,34 @@ public class ValidateTitle extends Base{
 		log.info("Successfully validated text message");
 
 }
+	
+	@Test()
+	public void pageNavigation1() throws IOException{
+		driver = initializeDriver();
+		driver.get(prop.getProperty("url"));
+		LandingPage l = new LandingPage(driver);
+		Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSES");
+		log.info("Successfully validated text message");
+
+}
+	@Test()
+	public void pageNavigation2() throws IOException{
+		driver = initializeDriver();
+		driver.get(prop.getProperty("url"));
+		LandingPage l = new LandingPage(driver);
+		Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSES");
+		log.info("Successfully validated text message");
+
+}
+	@Test()
+	public void pageNavigation3() throws IOException{
+		driver = initializeDriver();
+		driver.get(prop.getProperty("url"));
+		LandingPage l = new LandingPage(driver);
+		Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSES");
+		log.info("Successfully validated text message");
+
+}
 
 	@AfterTest
 	public void tearDown() {
