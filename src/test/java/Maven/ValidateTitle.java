@@ -59,6 +59,16 @@ public class ValidateTitle extends Base{
 
 }
 
+	@Test()
+	public void pageNavigation4() throws IOException{
+		driver = initializeDriver();
+		driver.get(prop.getProperty("url"));
+		LandingPage l = new LandingPage(driver);
+		Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSES");
+		log.info("Successfully validated text message");
+
+}
+
 	@AfterTest
 	public void tearDown() {
 		driver.quit();
